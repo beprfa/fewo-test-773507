@@ -8,8 +8,8 @@ _Last updated: February 2026_
 ## 1. Data Controller
 
 Nicole Neckermann
-Bergstraße 7
-83229 Aschau im Chiemgau
+Einhardstr. 75
+63500 Seligenstadt
 Germany
 Email: nicole.neckermann@icloud.com
 

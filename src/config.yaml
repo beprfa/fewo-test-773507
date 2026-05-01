@@ -1,6 +1,6 @@
 site:
-  name: 'Musterhaus Sonnenschein'
-  site: 'https://fewo-test-773507.pages.dev'
+  name: 'Seligenstadt-Perle'
+  site: 'http://localhost:4326'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: 'Musterhaus Sonnenschein – Ferienwohnungen in Aschau im Chiemgau'
-    template: '%s — Musterhaus Sonnenschein'
+    default: 'Seligenstadt-Perle – Ferienwohnungen in Seligenstadt'
+    template: '%s — Seligenstadt-Perle'
   description: 'Ferienwohnungen im alpinen Landhaus am Fuße der Chiemgauer Alpen. Ankommen. Durchatmen. Genießen.'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: 'Musterhaus Sonnenschein'
+    site_name: 'Seligenstadt-Perle'
     images:
       - url: '~/assets/images/default.png'
         width: 1200

@@ -54,7 +54,7 @@ export const footerData = {
       ],
     },
     {
-      title: 'Musterhaus Sonnenschein',
+      title: 'Seligenstadt-Perle',
       links: [
         { text: 'Über uns', href: '/#landhaus' },
         { text: 'Die Region', href: '/#landhaus' },
@@ -66,13 +66,14 @@ export const footerData = {
       links: [
         { text: 'Impressum', href: getPermalink('/terms') },
         { text: 'Datenschutz', href: getPermalink('/privacy') },
+{ text: 'AGB', href: getPermalink('/agb') },
       ],
     },
   ],
   secondaryLinks: [],
   socialLinks: [],
   footNote: `
-    © ${new Date().getFullYear()} Musterhaus Sonnenschein – Eine Seite von <a href="https://www.meinfewosite.de" target="_blank" rel="noopener" class="underline hover:text-gray-700">MeineFeWoSeite.de</a>.
+    © ${new Date().getFullYear()} Seligenstadt-Perle – Eine Seite von <a href="https://www.meinfewosite.de" target="_blank" rel="noopener" class="underline hover:text-gray-700">MeineFeWoSeite.de</a>.
   `,
 };
 
@@ -86,7 +87,7 @@ export const footerDataEn = {
       ],
     },
     {
-      title: 'Musterhaus Sonnenschein',
+      title: 'Seligenstadt-Perle',
       links: [
         { text: 'About Us', href: '/en#the-estate' },
         { text: 'The Region', href: '/en#the-estate' },
@@ -98,12 +99,13 @@ export const footerDataEn = {
       links: [
         { text: 'Legal Notice', href: getPermalink('/en/terms') },
         { text: 'Privacy Policy', href: getPermalink('/en/privacy') },
+{ text: 'Terms', href: getPermalink('/en/agb') },
       ],
     },
   ],
   secondaryLinks: [],
   socialLinks: [],
   footNote: `
-    © ${new Date().getFullYear()} Musterhaus Sonnenschein – A site by <a href="https://www.meinfewosite.de" target="_blank" rel="noopener" class="underline hover:text-gray-700">MeineFeWoSeite.de</a>.
+    © ${new Date().getFullYear()} Seligenstadt-Perle – A site by <a href="https://www.meinfewosite.de" target="_blank" rel="noopener" class="underline hover:text-gray-700">MeineFeWoSeite.de</a>.
   `,
 };

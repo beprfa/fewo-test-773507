@@ -11,14 +11,15 @@ tomorrow.setDate(tomorrow.getDate() + 1);
 const minDate = tomorrow.toISOString().split('T')[0];
 
 const terms = [
-  { title: 'Deposit', description: 'Eine Anzahlung von 30% des Gesamtbetrags ist innerhalb von 7 Tagen nach Buchungsbestätigung fällig.' },
-  { title: 'Cancellation', description: 'Kostenlose Stornierung bis 30 Tage vor Anreise. Danach werden 50% des Gesamtbetrags berechnet.' },
-  { title: 'Check-in', description: '3:00 PM – 6:00 PM (other times by arrangement)' },
-  { title: 'Check-out', description: '8:00 AM – 10:00 AM (other times by arrangement)' },
-  { title: 'Key handover', description: 'Die Schlüsselübergabe erfolgt persönlich vor Ort. Bitte melden Sie sich 30 Minuten vor Anreise telefonisch.' },
-  { title: 'Crib/Extra bed', description: 'Babybett und Zustellbett auf Anfrage verfügbar. Bitte bei der Buchung angeben.' },
-  { title: 'Pets', description: 'Haustiere sind nach Absprache willkommen. Es fällt eine Reinigungspauschale von 30€ an.' },
+  { title: 'Deposit', description: 'Eine Anzahlung von 50% des Gesamtbetrags ist innerhalb von 3 Tagen nach Buchungsbestätigung fällig.' },
+  { title: 'Cancellation', description: 'Kostenlose Stornierung bis 3 Tage vor Anreise. Danach werden 50% des Gesamtbetrags berechnet.' },
+  { title: 'Check-in', description: '2:00 PM – 10:00 PM (other times by arrangement)' },
+  { title: 'Check-out', description: '8:00 AM – 11:00 AM (other times by arrangement)' },
+  { title: 'Key handover', description: 'Die Schlüsselübergabe erfolgt persönlich vor Ort. Bitte melden Sie sich 60 Minuten vor Anreise telefonisch.' },
+  { title: 'Crib/Extra bed', description: 'Babybett und Zustellbett auf Anfrage verfügbar. ' },
+  { title: 'Pets', description: 'Haustiere sind nach Absprache willkommen. Es fällt eine Reinigungspauschale von 50€ an.' },
   { title: 'Parking', description: 'Ein kostenloser Parkplatz steht direkt am Haus zur Verfügung.' },
+  { title: 'Tourist tax and other local fees', description: 'Kurtaxe in Höhe von 2.50 EUR' },
 ];
 ---
 
@@ -51,16 +52,16 @@ const terms = [
           </thead>
           <tbody class="text-muted dark:text-slate-400">
             <tr class="border-b border-primary/10">
-              <td class="py-3 px-4 font-medium text-default dark:text-white">Alpenpanorama</td>
-              <td class="py-3 px-4">60 €</td>
-              <td class="py-3 px-4">75 €</td>
-              <td class="py-3 px-4">45 €</td>
+              <td class="py-3 px-4 font-medium text-default dark:text-white">Wohnung Einhard</td>
+              <td class="py-3 px-4">100 €</td>
+              <td class="py-3 px-4">150 €</td>
+              <td class="py-3 px-4">—</td>
             </tr>
             <tr class="">
-              <td class="py-3 px-4 font-medium text-default dark:text-white">Bergwiese</td>
-              <td class="py-3 px-4">45 €</td>
-              <td class="py-3 px-4">60 €</td>
-              <td class="py-3 px-4">35 €</td>
+              <td class="py-3 px-4 font-medium text-default dark:text-white">Wohnung Emma</td>
+              <td class="py-3 px-4">80 €</td>
+              <td class="py-3 px-4">160 €</td>
+              <td class="py-3 px-4">—</td>
             </tr>
           </tbody>
         </table>
@@ -68,7 +69,7 @@ const terms = [
 
       <div class="text-sm text-muted dark:text-slate-400 space-y-2 mb-8">
         <p><strong>Note:</strong> All prices are gross prices and include 7% VAT.</p>
-        <p>Example total price for 7 nights (2 persons) in "Alpenpanorama": 7 nights × €75 + €45 cleaning fee = <strong>€570 total</strong> incl. 7% VAT and cleaning fee.</p>
+        <p>Example total price for 7 nights (2 persons) in "Wohnung Einhard": 7 nights × €150 = <strong>€1050 total</strong> incl. 7% VAT.</p>
       </div>
 
       <div class="mb-8">
@@ -76,11 +77,11 @@ const terms = [
         <div class="bg-white dark:bg-slate-800 rounded-lg border border-gray-200 dark:border-slate-700 px-4">
           <div class="flex justify-between gap-4 py-2 border-b border-primary/10 last:border-b-0">
             <span class="font-medium text-default dark:text-white">Pets</span>
-            <span class="text-muted dark:text-slate-400 text-right">Haustiere sind nach Absprache willkommen. Es fällt eine Reinigungspauschale von 30€ an.</span>
+            <span class="text-muted dark:text-slate-400 text-right">Haustiere sind nach Absprache willkommen. Es fällt eine Reinigungspauschale von 50€ an.</span>
           </div>
           <div class="flex justify-between gap-4 py-2 border-b border-primary/10 last:border-b-0">
             <span class="font-medium text-default dark:text-white">Baby cot/Extra bed</span>
-            <span class="text-muted dark:text-slate-400 text-right">Babybett und Zustellbett auf Anfrage verfügbar. Bitte bei der Buchung angeben.</span>
+            <span class="text-muted dark:text-slate-400 text-right">Babybett und Zustellbett auf Anfrage verfügbar.</span>
           </div>
         </div>
         <p class="text-xs text-muted dark:text-slate-500 mt-2 italic">Not included in the total price.</p>
@@ -145,8 +146,8 @@ const terms = [
             <label for="apartment" class="block text-sm font-medium mb-1 dark:text-white">Apartment *</label>
             <select id="apartment" name="apartment" required class="w-full px-4 py-2 border border-gray-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-700 dark:text-white focus:ring-2 focus:ring-primary focus:border-primary">
               <option value="">Please select...</option>
-              <option value="alpenpanorama">Alpenpanorama</option>
-              <option value="bergwiese">Bergwiese</option>
+              <option value="wohnung-einhard">Wohnung Einhard</option>
+              <option value="wohnung-emma">Wohnung Emma</option>
             </select>
           </div>
 

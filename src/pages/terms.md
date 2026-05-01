@@ -6,8 +6,8 @@ layout: '~/layouts/MarkdownLayout.astro'
 ## Angaben gemäß § 5 TMG
 
 Nicole Neckermann
-Bergstraße 7
-83229 Aschau im Chiemgau
+Einhardstr. 75
+63500 Seligenstadt
 Deutschland
 
 ## Kontakt
@@ -17,8 +17,8 @@ E-Mail: nicole.neckermann@icloud.com
 ## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
 
 Nicole Neckermann
-Bergstraße 7
-83229 Aschau im Chiemgau
+Einhardstr. 75
+63500 Seligenstadt
 Deutschland
 
 ## Hinweis
